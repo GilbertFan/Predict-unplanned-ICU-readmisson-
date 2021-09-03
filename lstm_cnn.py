@@ -144,10 +144,6 @@ def train_model(model, x_train,y_train,x_test,y_test, epochs):
                                        (epoch, train_loss.result(), train_metric.result(), valid_loss.result(),
                                         valid_metric.result())))
             tf.print("")
-            tf.print("train acc is {}".format(accuracy_score(l_t, p_t1)))
-            tf.print("test acc is {}".format(accuracy_score(l_v, p_v1)))
-            tf.print("train f1 is {}".format(f1_score(l_t, p_t1)))
-            tf.print("test f1 is {}".format(f1_score(l_v, p_v1)))
 
 
         train_loss.reset_states()
@@ -156,4 +152,4 @@ def train_model(model, x_train,y_train,x_test,y_test, epochs):
         valid_metric.reset_states()
 
 
-train_model(model, x_train,y_train,x_test,y_test,epochs=6)
+train_model(model, x_train,y_train,x_test,y_test,epochs=10)
