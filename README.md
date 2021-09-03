@@ -1,5 +1,5 @@
 # Predict unplanned ICU readmisson
-Predictive Process Monitoring to predict unplanned ICU readmisson\
+Outcome-Oriented Predictive Process Monitoring to Predict Unplanned ICU Readmission in MIMIC-IV Database\
 Requirements:\
 python==3.7\
 pandas==0.25.3\
